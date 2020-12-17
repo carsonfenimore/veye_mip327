@@ -10,3 +10,5 @@ Note2: you can easily convert the yuv frames using opencv as follows:
 ```
 cv::Mat yuv(frameHeight+frameHeight/2, frameWidth, CV_8UC1,(uchar *)yuvData);
 ```
+
+Note3: To use this code, simply clone the veye repository listed above.  You should be able to compile the code using the provided build.sh
