@@ -11,4 +11,14 @@ Note2: you can easily convert the yuv frames using opencv as follows:
 cv::Mat yuv(frameHeight+frameHeight/2, frameWidth, CV_8UC1,(uchar *)yuvData);
 ```
 
-Note3: To use this code, simply clone the veye repository listed above.  You should be able to compile the code using the provided build.sh
+## To use this code 
+```
+git clone the https://github.com/veyeimaging/raspberrypi.git
+git clone https://github.com/carsonfenimore/veye_mip327.git
+cp veye_mip327/* raspberrypi/veye_raspcam/source
+cd raspberrypi/veye_raspcam/source
+./build.sh
+./mipi327cap
+```
+  
+
