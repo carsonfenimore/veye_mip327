@@ -6,6 +6,7 @@ This code allows simultaneous streaming of H264 NALUs and YUV frames.  On a rasp
 Note that while it is possible to stream RGB, the internal bus of the raspberry pi is not able to push full 1080p @ 30fps.  For this reason YUV is preferred for frame formats.
 
 Note2: you can easily convert the yuv frames using opencv as follows:
-  
-   cv::Mat yuv(frameHeight+frameHeight/2, frameWidth, CV_8UC1,(uchar *)yuvData);
-   
+
+```
+cv::Mat yuv(frameHeight+frameHeight/2, frameWidth, CV_8UC1,(uchar *)yuvData);
+```
